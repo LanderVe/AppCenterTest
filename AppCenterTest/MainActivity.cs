@@ -22,7 +22,7 @@ namespace AppCenterTest
   [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
   public class MainActivity : AppCompatActivity
   {
-    const string APP_SECRET = "3e5d7542-c58d-40eb-8fb6-7b4e3ec43571"; //also in manifest file
+    const string APP_SECRET = "00000000-0000-0000-0000-000000000000"; //also in manifest file
     UserInformation userInfo;
 
     protected async override void OnCreate(Bundle savedInstanceState)

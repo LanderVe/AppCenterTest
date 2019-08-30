@@ -11,7 +11,7 @@
 
         <data
             android:host="auth"
-            android:scheme="msal3e5d7542-c58d-40eb-8fb6-7b4e3ec43571" />
+            android:scheme="msal00000000-0000-0000-0000-000000000000" />
       </intent-filter>
     </activity>
   </application>
