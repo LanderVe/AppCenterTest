@@ -25,7 +25,7 @@ namespace AppCenterTest
     const string APP_SECRET = "00000000-0000-0000-0000-000000000000"; //also in manifest file
     UserInformation userInfo;
 
-    protected async override void OnCreate(Bundle savedInstanceState)
+    protected override void OnCreate(Bundle savedInstanceState)
     {
       base.OnCreate(savedInstanceState);
       Xamarin.Essentials.Platform.Init(this, savedInstanceState);
