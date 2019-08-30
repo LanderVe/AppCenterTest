@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "348808626485",
+    "firebase_url": "https://appcentertest-bfe3e.firebaseio.com",
+    "project_id": "appcentertest-bfe3e",
+    "storage_bucket": "appcentertest-bfe3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348808626485:android:4dfff4760baf1575",
+        "android_client_info": {
+          "package_name": "com.u2u.appcentertest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348808626485-3c6mcj04hq8g2dvpigeoqpt58u7memda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_uNQqAOV3lx53qmJF8Hd5WWB1lV376ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348808626485-3c6mcj04hq8g2dvpigeoqpt58u7memda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
