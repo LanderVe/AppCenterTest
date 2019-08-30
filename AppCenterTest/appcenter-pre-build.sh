@@ -46,7 +46,7 @@ if [ -e "$MANIFEST_FILE" ]
 then
     # Replace placeholder with env variable
     echo "Updating APP_SECRET to $APP_SECRET in AndroidManifest.xml"
-    sed -i '' 's#msal"[-a-z0-9]*"#msal"'$APP_SECRET'"#' $MANIFEST_FILE
+    sed -i '' 's#msal[-a-z0-9]*#msal'$APP_SECRET'#' $MANIFEST_FILE
 
     echo "File content:"
     cat $MANIFEST_FILE
