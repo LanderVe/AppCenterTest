@@ -7,31 +7,34 @@ using Xamarin.UITest.Queries;
 
 namespace AppCenterTest.UITests
 {
-    [TestFixture(Platform.Android)]
-    [TestFixture(Platform.iOS)]
-    public class Tests
+  [TestFixture(Platform.Android)]
+  [TestFixture(Platform.iOS)]
+  public class Tests
+  {
+    IApp app;
+    Platform platform;
+
+    public Tests(Platform platform)
     {
-        IApp app;
-        Platform platform;
-
-        public Tests(Platform platform)
-        {
-            this.platform = platform;
-        }
-
-        [SetUp]
-        public void BeforeEachTest()
-        {
-            app = AppInitializer.StartApp(platform);
-        }
-
-        [Test]
-        public void WelcomeTextIsDisplayed()
-        {
-            AppResult[] results = app.WaitForElement(c => c.Marked("Welcome to Xamarin.Forms!"));
-            app.Screenshot("Welcome screen.");
-
-            Assert.IsTrue(results.Any());
-        }
+      this.platform = platform;
     }
+
+    [SetUp]
+    public void BeforeEachTest()
+    {
+      app = AppInitializer.StartApp(platform);
+    }
+
+    [Test]
+    public void FABWorks()
+    {
+      AppResult[] results = app.WaitForElement(c => c.Marked("content"));
+      app.Screenshot("Welcome screen.");
+
+      app.Tap(x => x.Marked("fab"));
+      app.Screenshot("After floating action button");
+
+      Assert.IsTrue(results.Any());
+    }
+  }
 }

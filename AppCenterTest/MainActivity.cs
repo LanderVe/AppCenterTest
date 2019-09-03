@@ -16,6 +16,7 @@ using Microsoft.AppCenter.Push;
 using Microsoft.AppCenter.Data;
 using Xamarin.Essentials;
 using AppCenterTest.Models;
+using Microsoft.AppCenter.Distribute;
 
 namespace AppCenterTest
 {
@@ -52,7 +53,7 @@ namespace AppCenterTest
 
       ReceivePush();
 
-      AppCenter.Start(APP_SECRET, typeof(Analytics), typeof(Crashes), typeof(Auth), typeof(Data), typeof(Push));
+      AppCenter.Start(APP_SECRET, typeof(Analytics), typeof(Crashes), typeof(Auth), typeof(Data), typeof(Push), typeof(Distribute));
       AppCenter.LogLevel = LogLevel.Verbose;
     }
 
