@@ -115,6 +115,9 @@
     <PackageReference Include="Microsoft.AppCenter.Data">
       <Version>2.1.1</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Distribute">
+      <Version>2.1.1</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.AppCenter.Push">
       <Version>2.1.1</Version>
     </PackageReference>
