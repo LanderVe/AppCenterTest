@@ -71,7 +71,7 @@ namespace AppCenterTest
           {
             foreach (var key in e.CustomData.Keys)
             {
-              summary += $"\t{key}: {e.CustomData[key]}\n";
+              summary += $"\t{key}:  {e.CustomData[key]}\n";
             }
           }
 
